@@ -1,0 +1,7 @@
+<country-search-input placeholder="Buscar por pais" (value)="query.set($event)" />
+
+@if(countryResource.error()){
+<h3>{{countryResource.error()}} </h3>
+}@if(countryResource.hasValue() && countryResource.value() !== undefined) {
+<country-list [countries]="countryResource.value()" />
+}
