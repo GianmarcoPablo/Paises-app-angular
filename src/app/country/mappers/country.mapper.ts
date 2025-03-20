@@ -11,6 +11,8 @@ export class CountryMapper {
             flag: country.flag,
             flagSvg: country.flags.svg,
             population: country.population,
+            region: country.region,
+            subRegion: country.subregion
         }
     }
 
